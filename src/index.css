@@ -75,5 +75,8 @@ img {
 .main__price{
   position: absolute;
   top: 63%;
-  right: 16%;
+  right: 6%;
+}
+del{
+  color: red
 }
