@@ -11,12 +11,22 @@ export const Main = () => {
           <div className='main__contents'>
             <div className='main__content'>
               <div className='content-imgs'>
-                <img className='content-img' src={logo} alt='logo' />
+                <img className='content-img' src={logo3} alt='logo' />
               </div>
+              <p className='main__title'>Macbook 14</p>
+              <div className='main__desc'>
+                <p className='main__desc-full'>
+                  System on Chip (SoC), Apple M1 Pro chip, Up to 10-core CPU
+                  with 8 performance cores and 2 efficiency cores, Upto 16-core
+                  GPU, 16-core
+                </p>
+              </div>
+              <div className="main__price">price</div>
+              <button className='main__button'>Buy</button>
             </div>
             <div className='main__content'>
               <div className='content-imgs'>
-                <img className='content-img' src={logo2} alt='logo2' />
+                <img className='content-img' src={logo3} alt='logo2' />
               </div>
             </div>
             <div className='main__content'>
