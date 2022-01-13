@@ -5,7 +5,7 @@ const initialState = {
   desc: `System on Chip (SoC), Apple M1 Pro chip, Up to 10-core CPU
   with 8 performance cores and 2 efficiency cores, Upto 16-core
   GPU, 16-core`,
-  // logo: '../components/img/3.jpg',
+  logo: '../components/img/3.jpg',
   price: '3400$',
  }
 

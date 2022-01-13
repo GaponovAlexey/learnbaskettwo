@@ -1,9 +1,9 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { useSelector } from 'react-redux'
 import logo3 from './img/3.jpg'
 
 export const Main = () => {
-  // const title = useSelector((state) => state.data.title)
+  const {title, price, desc, logo3 } = useSelector((state) => state.data)
   return (
     <div>
       <div className='main'>
@@ -13,16 +13,14 @@ export const Main = () => {
               <div className='content-imgs'>
                 <img className='content-img' src={logo3} alt='logo' />
               </div>
-              {/* <p className='main__title'>{title}</p> */}
+              <p className='main__title'>{title}</p>
               <div className='main__desc'>
                 <p className='main__desc-full'>
-                  System on Chip (SoC), Apple M1 Pro chip, Up to 10-core CPU
-                  with 8 performance cores and 2 efficiency cores, Upto 16-core
-                  GPU, 16-core
+                 {desc}
                 </p>
               </div>
               <div className='main__price'>
-                <del>4000$</del> - 3400$
+                <del>4000$</del> - {price}
               </div>
               <button className='main__button'>Buy</button>
             </div>
