@@ -19,7 +19,9 @@ export const Main = () => {
                   GPU, 16-core
                 </p>
               </div>
-              <div className="main__price"><del>4000$</del> - 3400$</div>
+              <div className='main__price'>
+                <del>4000$</del> - 3400$
+              </div>
               <button className='main__button'>Buy</button>
             </div>
             <div className='main__content'>
@@ -34,7 +36,9 @@ export const Main = () => {
                   GPU, 16-core
                 </p>
               </div>
-              <div className="main__price"><del>4000$</del> - 3400$</div>
+              <div className='main__price'>
+                <del>4000$</del> - 3400$
+              </div>
               <button className='main__button'>Buy</button>
             </div>
 
@@ -50,7 +54,9 @@ export const Main = () => {
                   GPU, 16-core
                 </p>
               </div>
-              <div className="main__price"><del>4000$</del> - 3400$</div>
+              <div className='main__price'>
+                <del>4000$</del> - 3400$
+              </div>
               <button className='main__button'>Buy</button>
             </div>
             <div className='main__content'>
@@ -65,7 +71,9 @@ export const Main = () => {
                   GPU, 16-core
                 </p>
               </div>
-              <div className="main__price"><del>4000$</del> - 3400$</div>
+              <div className='main__price'>
+                <del>4000$</del> - 3400$
+              </div>
               <button className='main__button'>Buy</button>
             </div>
             <div className='main__content'>
@@ -80,7 +88,9 @@ export const Main = () => {
                   GPU, 16-core
                 </p>
               </div>
-              <div className="main__price"><del>4000$</del> - 3400$</div>
+              <div className='main__price'>
+                <del>4000$</del> - 3400$
+              </div>
               <button className='main__button'>Buy</button>
             </div>
             <div className='main__content'>
@@ -95,7 +105,9 @@ export const Main = () => {
                   GPU, 16-core
                 </p>
               </div>
-              <div className="main__price"><del>4000$</del> - 3400$</div>
+              <div className='main__price'>
+                <del>4000$</del> - 3400$
+              </div>
               <button className='main__button'>Buy</button>
             </div>
             <div className='main__content'>
@@ -110,7 +122,9 @@ export const Main = () => {
                   GPU, 16-core
                 </p>
               </div>
-              <div className="main__price"><del>4000$</del> - 3400$</div>
+              <div className='main__price'>
+                <del>4000$</del> - 3400$
+              </div>
               <button className='main__button'>Buy</button>
             </div>
             <div className='main__content'>
@@ -125,7 +139,9 @@ export const Main = () => {
                   GPU, 16-core
                 </p>
               </div>
-              <div className="main__price"><del>4000$</del> - 3400$</div>
+              <div className='main__price'>
+                <del>4000$</del> - 3400$
+              </div>
               <button className='main__button'>Buy</button>
             </div>
             <div className='main__content'>
@@ -140,10 +156,11 @@ export const Main = () => {
                   GPU, 16-core
                 </p>
               </div>
-              <div className="main__price"><del>4000$</del> - 3400$</div>
+              <div className='main__price'>
+                <del>4000$</del> - 3400$
+              </div>
               <button className='main__button'>Buy</button>
             </div>
-          
           </div>
         </div>
       </div>

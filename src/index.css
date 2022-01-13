@@ -80,3 +80,13 @@ img {
 del{
   color: red
 }
+/* ---- basket ---- */
+
+.basket{
+  position: fixed;
+  right: 0;
+  left: 0;
+  width: 20%;
+  background-color: red;
+}
+
