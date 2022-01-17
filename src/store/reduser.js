@@ -23,10 +23,7 @@ const initialState = {
     price: '3400$',
     oldprice: '4400$',
   },
-  basket: [
-    { title: 'test', desc: 'test', price: '9999$' },
-    { title: 'test2', desc: 'test', price: '9999$' },
-  ],
+  basket: [],
 }
 
 export const counterSlice = createSlice({
