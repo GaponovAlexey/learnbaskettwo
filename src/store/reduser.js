@@ -10,8 +10,6 @@ export const incrementAsync = createAsyncThunk(
   }
 )
 
-
-
 const initialState = {
   isBasket: false,
   data: [],
@@ -37,8 +35,11 @@ export const counterSlice = createSlice({
   initialState,
   reducers: {
     isBaskets: (state) => {
-      state.isBasket = state.isBasket ? false : true 
-    }
+      state.isBasket = state.isBasket ? false : true
+    },
+    ProductBasket: (state, { payload }) => {
+      state.basket.push(payload)
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -52,6 +53,6 @@ export const counterSlice = createSlice({
   },
 })
 
-export const { isBaskets } = counterSlice.actions
+export const { isBaskets, ProductBasket } = counterSlice.actions
 
 export default counterSlice.reducer

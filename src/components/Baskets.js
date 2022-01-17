@@ -5,7 +5,7 @@ import { Basket } from './Basket'
 
 export const Baskets = () => {
   const { isBasket } = useSelector((state) => state.data)
-  const element = useSelector((state) => state.data.element)
+  const element = useSelector((state) => state.data.basket)
   return (
     <>
       <Basket {...element} isBasket={isBasket} />

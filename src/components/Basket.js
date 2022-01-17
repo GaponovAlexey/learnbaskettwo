@@ -11,12 +11,14 @@ export const Basket = ({ title, desc, price, isBasket }) => {
         <div className='baslet__price'>
           <div className='basket__title'>{title}</div>
           <div className='basket__desc'>{desc}</div>
-          <span className='basket__price'>{price}</span>
-          <span className='basket__bay'>
-            <a href='#!' className='Buy'>
-              buy
-            </a>{' '}
-          </span>
+          <div className='prive_buy'>
+            <span className='basket__price'>{price}</span>
+            <span className='basket__bay'>
+              <a href='#!' className='Buy'>
+                buy
+              </a>{' '}
+            </span>
+          </div>
         </div>
       </div>
     </div>

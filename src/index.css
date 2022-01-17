@@ -91,8 +91,7 @@ del {
   height: 20%;
   border-radius: 5px;
   margin-right: 10px;
-  box-shadow: 2px 5px 16px 0px #0b33,
-  5px 5px 15px 5px rgba(0,0,0,0);
+  box-shadow: 2px 5px 16px 0px #0b33, 5px 5px 15px 5px rgba(0, 0, 0, 0);
 }
 .basket__element {
   position: relative;
@@ -107,14 +106,19 @@ del {
 }
 .basket__title {
   text-align: center;
-
 }
-.basket__desc{
+.basket__desc {
   font-size: 10px;
 }
-.basket__bay{
+.basket__bay {
   margin-left: 40px;
 }
-.Buy{
-
+.baslet__price {
+  position: relative;
+}
+.prive_buy {
+  position: absolute;
+  bottom: 0;
+  right: 3;
+  margin-bottom: 10px;
 }
