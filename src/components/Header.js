@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { isBaskets } from '../store/reduser'
+import { Baskets } from './Baskets'
 
 export const Header = () => {
   const dispatch = useDispatch()
@@ -13,6 +14,7 @@ export const Header = () => {
           basket
         </div>
       </div>
+      <Baskets />
     </div>
   )
 }

@@ -11,7 +11,7 @@ export const incrementAsync = createAsyncThunk(
 )
 
 const initialState = {
-  isBasket: false,
+  isBasket: true,
   data: [],
   status: 'no',
   element: {
@@ -23,11 +23,10 @@ const initialState = {
     price: '3400$',
     oldprice: '4400$',
   },
-  basket: {
-    title: 'test',
-    desc: 'test',
-    price: '9999$',
-  },
+  basket: [
+    { title: 'test', desc: 'test', price: '9999$' },
+    { title: 'test2', desc: 'test', price: '9999$' },
+  ],
 }
 
 export const counterSlice = createSlice({

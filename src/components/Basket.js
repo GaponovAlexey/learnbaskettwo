@@ -6,7 +6,7 @@ export const Basket = ({ title, desc, price, isBasket }) => {
     <div className='basket'>
       <div className='basket__element'>
         <div className='basket__logo'>
-          <img src={logo3} alt='' className='basket__img' />
+          <img src={logo3} alt='logo' className='basket__img' />
         </div>
         <div className='baslet__price'>
           <div className='basket__title'>{title}</div>
