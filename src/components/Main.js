@@ -3,7 +3,9 @@ import { useSelector } from 'react-redux'
 import logo3 from '../img/3.jpg'
 
 export const Main = () => {
-  const {title,oldprice, price, desc } = useSelector((state) => state.data.element)
+  const { title, oldprice, price, desc } = useSelector(
+    (state) => state.data.element
+  )
   return (
     <div>
       <div className='main'>
@@ -15,9 +17,7 @@ export const Main = () => {
               </div>
               <p className='main__title'>{title}</p>
               <div className='main__desc'>
-                <p className='main__desc-full'>
-                 {desc}
-                </p>
+                <p className='main__desc-full'>{desc}</p>
               </div>
               <div className='main__price'>
                 <del>{oldprice}</del> - {price}
