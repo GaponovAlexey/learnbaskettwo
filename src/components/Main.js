@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
 import { useSelector } from 'react-redux'
-import logo3 from './img/3.jpg'
+import logo3 from '../img/3.jpg'
 
 export const Main = () => {
-  const {title, price, desc, logo3 } = useSelector((state) => state.data)
+  const {title,oldprice, price, desc } = useSelector((state) => state.data.element)
   return (
     <div>
       <div className='main'>
@@ -20,7 +20,7 @@ export const Main = () => {
                 </p>
               </div>
               <div className='main__price'>
-                <del>4000$</del> - {price}
+                <del>{oldprice}</del> - {price}
               </div>
               <button className='main__button'>Buy</button>
             </div>
