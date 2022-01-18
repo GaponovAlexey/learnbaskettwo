@@ -12,9 +12,10 @@ export const incrementAsync = createAsyncThunk(
 
 const initialState = {
   isBasket: true,
-  data: [],
+  count: 1,
   status: 'no',
   element: {
+    id: 1,
     title: 'Macbook 14',
     desc: `System on Chip (SoC), Apple M1 Pro chip, Up to 10-core CPU
       with 8 performance cores and 2 efficiency cores, Upto 16-core

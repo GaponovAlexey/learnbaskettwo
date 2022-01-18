@@ -85,6 +85,7 @@ del {
 /* ---- basket ---- */
 .header__basket{
   position: relative;
+  cursor: pointer;
 }
 
 .basket__main {

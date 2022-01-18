@@ -3,9 +3,8 @@ import { useDispatch } from 'react-redux'
 import logo3 from '../img/3.jpg'
 import { ProductBasket } from '../store/reduser'
 
-export const Product = ({ title, oldprice, price, desc } ) => {
+export const Product = ({ title, oldprice, price, desc, id } ) => {
   const dispatch = useDispatch()
-  
 
   return (
     <div className='product'>
@@ -23,7 +22,7 @@ export const Product = ({ title, oldprice, price, desc } ) => {
               <div className='main__price'>
                 <del>{oldprice}</del> - {price}
               </div>
-              <button onClick={() => dispatch(ProductBasket({desc, title,price }))}  className='main__button'>Buy</button>
+              <button onClick={() => dispatch(ProductBasket({desc, title,price, id }))}  className='main__button'>Buy</button>
             </div>
           </div>
         </div>
