@@ -35,7 +35,8 @@ export const counterSlice = createSlice({
       state.isBasket = state.isBasket ? false : true
     },
     ProductBasket: (state, { payload }) => {
-      state.basket.push(payload)
+      const realID = state.basket.find((el) => (el.id = payload.id))
+      realID ? (state.count += +1) : state.basket.push(payload)
     },
   },
   extraReducers: (builder) => {

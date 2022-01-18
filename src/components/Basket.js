@@ -1,7 +1,7 @@
 import React from 'react'
 import logo3 from '../img/3.jpg'
 
-export const Basket = ({ title, desc, price, isBasket }) => {
+export const Basket = ({ title, desc, price, isBasket, count }) => {
   return isBasket ? (
     <div className='basket'>
       <div className='basket__element'>
@@ -12,6 +12,7 @@ export const Basket = ({ title, desc, price, isBasket }) => {
           <div className='basket__title'>{title}</div>
           <div className='basket__desc'>{desc}</div>
           <div className='prive_buy'>
+            <span className='basket__count'>{count}c</span>
             <span className='basket__price'>{price}</span>
             <span className='basket__bay'>
               <a href='#!' className='Buy'>
