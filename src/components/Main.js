@@ -4,13 +4,12 @@ import { useSelector } from 'react-redux'
 import { Product } from './Product'
 
 export const Main = () => {
-  const element = useSelector(
-    (state) => state.data.element
-  )
+  const element = useSelector((state) => state.data.element)
   return (
     <div>
-      <Product {...element}/>
+      {element.map((el) => (
+        <Product key={el.id} {...el} />
+      ))}
     </div>
-  
   )
 }

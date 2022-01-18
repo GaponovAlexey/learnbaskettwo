@@ -22,7 +22,7 @@ export const Product = ({ title, oldprice, price, desc, id } ) => {
               <div className='main__price'>
                 <del>{oldprice}</del> - {price}
               </div>
-              <button onClick={() => dispatch(ProductBasket({desc, title,price, id }))}  className='main__button'>Buy</button>
+              <button onClick={() => dispatch(ProductBasket({desc, title,price, id, count: 1 }))}  className='main__button'>Buy</button>
             </div>
           </div>
         </div>
