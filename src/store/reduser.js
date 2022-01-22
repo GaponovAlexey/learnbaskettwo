@@ -47,26 +47,17 @@ export const counterSlice = createSlice({
     },
     ProductBasket: {
       reducer: (state, { payload }) => {
-        const newBasket = state.basket.filter(el => el.count += 1)
-        const newItem = state.basket.find(el => el.id === payload.id)
-        newItem ? state.basket = newBasket : state.basket.push(payload)
-      },
-      prepare: (value) => {
-        return { 
-          payload: {
-            ...value,
-            // count: +1,
-          },
-        }
+        const newItem = state.basket.find((el) => el.id === payload.id)
+        newItem ? (newItem.count += 1) : state.basket.push(payload)
       },
     },
     increment: (state, { payload }) => {
       const newOrder = state.basket.map((el) => {
+        const newCount = el.count + 1
         if (el.id === payload.id) {
-          const newElement = el.count + 2
           return {
             ...el,
-            count: newElement,
+            count: newCount
           }
         } else {
           return el
@@ -75,19 +66,6 @@ export const counterSlice = createSlice({
       state.basket = newOrder
     },
     decrement: (state, { payload }) => {
-      const newOrder = [...state.basket]
-      newOrder.map((el) => {
-        if (el.id === payload.id) {
-          const newQuntity = el.count - 1
-          return {
-            ...el,
-            count: newQuntity,
-          }
-        } else {
-          return el
-        }
-      })
-      state.basket = newOrder
     },
   },
   extraReducers: (builder) => {
