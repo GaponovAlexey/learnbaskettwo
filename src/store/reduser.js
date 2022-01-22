@@ -47,15 +47,15 @@ export const counterSlice = createSlice({
     },
     ProductBasket: {
       reducer: (state, { payload }) => {
+        const newBasket = state.basket.filter(el => el.count += 1)
         const newItem = state.basket.find(el => el.id === payload.id)
-        const newCount = state.basket.find(co => co.count )
-        newItem ?? state.basket.push(payload)
+        newItem ? state.basket = newBasket : state.basket.push(payload)
       },
-      prepare: (state, value) => {
+      prepare: (value) => {
         return { 
           payload: {
             ...value,
-            count: ,
+            // count: +1,
           },
         }
       },
