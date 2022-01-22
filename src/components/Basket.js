@@ -26,6 +26,7 @@ export const Basket = ({ title, price, isBasket, count }) => {
                 buy
               </a>
             </span>
+            
           </div>
         </div>
       </div>

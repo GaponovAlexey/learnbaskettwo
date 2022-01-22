@@ -45,17 +45,28 @@ export const counterSlice = createSlice({
     isBaskets: (state) => {
       state.isBasket = state.isBasket ? false : true
     },
-    ProductBasket: (state, { payload }) => {
-      const realID = state.basket.find((el) => (el.id = payload.id))
-      realID ? state.basket.count = +1: state.basket.push(payload)
+    ProductBasket: {
+      reducer: (state, { payload }) => {
+        const newItem = state.basket.find(el => el.id === payload.id)
+        const newCount = state.basket.find(co => co.count )
+        newItem ?? state.basket.push(payload)
+      },
+      prepare: (state, value) => {
+        return { 
+          payload: {
+            ...value,
+            count: ,
+          },
+        }
+      },
     },
     increment: (state, { payload }) => {
-      const newOrder = state.basket.map(el => {
-        if(el.id === payload.id) {
+      const newOrder = state.basket.map((el) => {
+        if (el.id === payload.id) {
           const newElement = el.count + 2
           return {
             ...el,
-            count: newElement
+            count: newElement,
           }
         } else {
           return el
@@ -64,7 +75,8 @@ export const counterSlice = createSlice({
       state.basket = newOrder
     },
     decrement: (state, { payload }) => {
-      const newOrder = state.basket.map((el) => {
+      const newOrder = [...state.basket]
+      newOrder.map((el) => {
         if (el.id === payload.id) {
           const newQuntity = el.count - 1
           return {
