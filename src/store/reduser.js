@@ -66,6 +66,18 @@ export const counterSlice = createSlice({
       state.basket = newOrder
     },
     decrement: (state, { payload }) => {
+      const newOrder = state.basket.map(el => {
+        if(el.id === payload.id) {
+          const newCount = el.count -= 1
+          return {
+            ...el,
+            conunt: newCount 
+          } 
+        } else {
+          return el
+        }
+      })
+      state.basket = newOrder
     },
   },
   extraReducers: (builder) => {
